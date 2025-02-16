@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Clone</title>
+    <link rel="icon" type="image/x-icon" href="https://www.svgrepo.com/show/303108/google-icon-logo.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Phần nội dung chính cần căn giữa -->
+    <div class="main-content">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1024px-Google_2015_logo.svg.png" alt="Google Logo">
+        </div>
+
+        <div class="search-box">
+            <div class="search-container">
+                <!-- Icon search từ Material Symbols Round -->
+                <span class="material-symbols-rounded search-icon">search</span>
+                <input type="text" id="search-input" placeholder="Tìm kiếm trên Google">
+                <!-- Icon mic và lens từ Material Symbols Round -->
+                <span class="material-symbols-rounded mic-icon" id="mic-button">mic</span>
+                <span class="material-symbols-rounded lens-icon">photo_camera</span>
+            </div>
+            <div>
+                <button id="search-button">Tìm trên Google</button>
+                <button id="doodle-button">Xem trang dầu tiên tìm được</button>
+            </div>
+        </div>
+
+        <div class="languages">
+            Google có các thứ tiếng: 
+            <a href="#">English</a>
+            <a href="#">Français</a>
+            <a href="#">繁體中文</a>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Dòng 1: "Việt Nam" -->
+        <div class="footer-country">Việt Nam</div>
+
+        <!-- Dòng 2: Các liên kết -->
+        <div class="footer-line">
+            <div class="footer-links left">
+                <a href="#">Giới thiệu</a>
+                <a href="#">Quảng cáo</a>
+                <a href="#">Doanh nghiệp</a>
+                <a href="#">Cách hoạt động của Tìm kiếm</a>
+            </div>
+            <div class="footer-links right">
+                <a href="#">Quyền riêng tư</a>
+                <a href="#">Điều khoản</a>
+            </div>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

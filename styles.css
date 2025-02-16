@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Google Sans', Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Container chứa các phần tử cần căn giữa */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: -50px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 18px;
+        }
+
+        .logo img {
+            width: 300px;
+            height: auto;
+        }
+
+        .search-box {
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        .search-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        input[type="text"] {
+        background-color: #ecedef;
+        width: 500px;
+        padding: 15px 85px 15px 50px;
+        font-size: 16px;
+        border: 0px solid #dfe1e5;
+        border-radius: 100px;
+        margin-bottom: 20px;
+        font-family: 'Google Sans', Arial, sans-serif;
+        transition: none; /* Tắt hiệu ứng transition */
+    }
+
+    /* Tắt hiệu ứng hover */
+    input[type="text"]:hover {
+        background: #dadce0; /* Giữ nguyên màu nền khi hover */
+        box-shadow: none; /* Tắt đổ bóng */
+    }
+
+    /* Tắt đường viền khi focus */
+    input[type="text"]:focus {
+        outline: none; /* Xóa viền màu đen mặc định */
+        border: 0px solid #dfe1e5; /* Đảm bảo không có viền */
+    }
+
+        .search-icon, .mic-icon, .lens-icon {
+            position: absolute;
+            top: 35%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: black;
+            font-size: 25px; /* Kích thước icon */
+            font-variation-settings: 'FILL' 0, 'wght' 525, 'GRAD' 1, 'opsz' 0; /* Cấu hình biểu tượng */
+        }
+
+        .search-icon {
+            left: 15px;
+        }
+
+        .mic-icon {
+            right: 55px;
+        }
+
+        .lens-icon {
+            right: 15px; /* Vị trí cho lens */
+        }
+
+        button {
+            background: #0b57d0;
+            border: 0px;
+            border-radius: 100px;
+            color: white;
+            padding: 12.5px 20px;
+            margin: 0 5px;
+            font-size: 14px;
+            font-family: 'Google Sans', Arial, sans-serif;
+            cursor: pointer;
+        }
+
+        .languages {
+            text-align: center;
+            margin: 20px 0;
+            color: #4d5156;
+            cursor: pointer;
+        }
+
+        .languages a {
+            color: #1a0dab;
+            text-decoration: none;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background: #f2f2f2;
+            padding: 5px 35px;
+            margin-top: auto;
+        }
+
+        .footer-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 0;
+        }
+
+        /* Dòng đầu tiên - "Việt Nam" */
+        .footer-country {
+            width: 100%;
+            text-align: left;
+            padding: 10px 0;
+            border-bottom: 1px solid #dadce0;
+        }
+
+
+        /* Dòng thứ hai - Các liên kết */
+        .footer-links {
+            display: flex;
+            gap: 25px;
+            padding: 10px 0;
+        }
+
+        .footer-links.left {
+            justify-content: flex-start;
+        }
+
+        .footer-links.right {
+            justify-content: flex-end;
+        }
+
+        .footer-links a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
